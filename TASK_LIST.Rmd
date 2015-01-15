@@ -8,23 +8,23 @@
  maybe list of files/samples that match. Could be more of a summary output. 
 
 -Anyway to fix the error messages from the wilcoxon.rank sum test when there are ties?
-    15Jan15- I don't know, I will look into this. I'm not sure we should eliminate them? 
+15Jan15- I will look into this. I'm not sure we should eliminate them? 
 
 -Alpha_diversity_calc.R, drop the () from the output.
-    15Jan15- I don't see any parenthesis in the code. I'll look into it 
+15Jan15- I don't see any parenthesis in the code. I'll look into it 
     
 Microbes 1) Find 3 other packages on github (favorite them) that you think are good models for how to structure our package. This would be specific to content and formatting.
-    14Jan15- Completed 
+14Jan15- Completed 
 
 Microbes 2) Coding: We are at a place where you can complete a fair chunk of coding before pushing up to github so as not to create a lot of small pull requests. Next step is the metagenomics code used for the ADA analysis. I will push up to github the un-annotated metagenomics code. Please pull down to your system, annotate (roxygen,ect), test and commit.
-    14Jan15- Completed
+14Jan15- Completed
     
 Microbes 3) Documentation: Please include a README.rmd in each directory that discusses what files are present and what they do. The README file in the main directory we started in a previous version of the package- please recover this and include: installation using devtools::install_github() and leave places for the description, authors, ect. Look at other packages and start each section- I will go through and edit later. Also include a section in the README in the main directory- briefly- as well as the \data directory- expanded- that covers the data formats. Please format this section similar to what is described in PLINK (google) for data formats unless you have a better example. 
-    14Jan15- Started
+14Jan15- Started
 
 Microbes 4) Go through errors in the R CMD check and resolve.
-    15Jan15- Found main bug: including this TASK_LIST file in the microbes repo
-    15Jan15- 10 other warnings to work on
+15Jan15- Found main bug: including this TASK_LIST file in the microbes repo
+15Jan15- 10 other warnings to work on
     
 ##########################################################################
 ###
@@ -33,12 +33,14 @@ Microbes 4) Go through errors in the R CMD check and resolve.
 ##########################################################################
 
 Literature 1)   I have a binder I will drop off. This is where we are going to keep the papers you are downloading. Please create dividers to separate paper (use manila folders if you can't find formal dividers). Please create sections: mouse, human, mouse/human, metabolomics. These sections will be subdivided or potentially reorganized but this will be a good way to sort out the papers initially.
-    15Jan15- starting
+15Jan15- starting
+
 Literature 2)   Twin paper. You indicated you had started reading this paper and keeping track of the analysis plan. This will be the major project you will be working on once the above tasks are completed. The data and experimental design are very similar to what we are collecting (at least cross-sectional). We are going to work to recreate the analysis presented in this paper as a template for our analysis. Not all the tools will need to be written in R but we will need to outline a "pipeline" that covers the majority of the analysis in the paper. Please show me the analysis outline that you have generated today.
-      13Jan15- First Draft of Analysis plan in G:\Friedman Lab\Microbiome\Microbes_package\Outline
+13Jan15- First Draft of Analysis plan in G:\Friedman Lab\Microbiome\Microbes_package\Outline
+
 Literature 3)  Annotated bibliography. Many of the papers I asked you to pull will need to be annotated. As a first step- please work on an annotation (different than the analysis outline, http://guides.library.cornell.edu/annotatedbibliography) of the twin paper. This would be a short write up that would cover the big picture things we -as a group - are interested in. Sample size, obesity information (BMI?, lean, GWG), sequencing (PCR, 16s, metagenomics), other omics data (germ-free, transcriptomics, metabolites, ect), is data publically available (include URL), major bugs significantly associated and their relation to outcome (obesity related?).  Please generate a annotated bibliography for the twin paper- I will help you get the essential information in the short write-up before you start annotating other papers. You will not need to annotate ALL papers but quite a few moving forward. It is an incredibly helpful skill to develop as you will not only learn a lot more in your reading but it will help you down the road in your future professional endeavors.
-      14Jan15- First Draft of Twin paper annotation.G:\Friedman Lab\Microbiome\Manuscripts\Annotations
-      15Jan15- Dom working on comments.
+14Jan15- First Draft of Twin paper annotation.G:\Friedman Lab\Microbiome\Manuscripts\Annotations
+15Jan15- Dom working on comments.
       
 ##########################################################################
 ###
@@ -46,5 +48,6 @@ Literature 3)  Annotated bibliography. Many of the papers I asked you to pull wi
 ###
 ##########################################################################
 1) MG-RAST (http://metagenomics.anl.gov/), the primary papers associated with MG-RAST, and the matR tool (https://github.com/MG-RAST/matR/). This is the major way we take the raw data from the MiSeq and annotate the sequences to generate the OUT/WGS tables.  Once you have the above completed- I willwalk you through some of the things I would like you to do with MG-RAST (ex. get phylum level data on twins and run the analysis you outlined from paper to recreate result).
+
 2) Unifrac (http://aem.asm.org/content/71/12/8228.abstract) and implement in R (http://joey711.github.io/phyloseq-demo/unifrac.html). We will work to retrieve sequences from MG-RAST and/or our raw data to run in Unifrac. Important tool that we are currently not using because we need to manipulate the raw data. We can talk more about this once you complete everything above. Should be a fun project!
  
